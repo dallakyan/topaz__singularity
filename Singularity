@@ -29,7 +29,7 @@ Include: yum wget
     yum -y install wget python35u python35u-pip libgomp cuda-runtime-8-0 bzip2
     ln -s /usr/local/cuda-8.0 /usr/local/cuda
     # install conda
-    wget https://repo.continuum.io/miniconda/Miniconda3-3.7.0-Linux-x86_64.sh -O ~/miniconda.sh
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
     bash ~/miniconda.sh -b -p /usr/local/conda
     /usr/local/conda/bin/conda install -y numpy pandas scikit-learn
     # install topaz
