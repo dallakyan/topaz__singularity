@@ -19,7 +19,7 @@ Include: yum wget
     echo "LD_LIBRARY_PATH: $LD_LIBRARY_PATH"
     echo "PATH: $PATH"
     echo "Arguments received: $*"
-    exec topaz "$@"
+    exec /usr/local/conda/bin/topaz "$@"
 %post
     # commands to be executed inside container during bootstrap
     yum -y install epel-release
