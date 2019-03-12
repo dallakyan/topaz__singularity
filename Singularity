@@ -30,9 +30,9 @@ Include: yum wget
     ln -s /usr/local/cuda-8.0 /usr/local/cuda
     # install conda
     wget https://repo.continuum.io/miniconda/Miniconda3-3.7.0-Linux-x86_64.sh -O ~/miniconda.sh
-    bash ~/miniconda.sh -b
-    conda install numpy pandas scikit-learn
+    bash ~/miniconda.sh -b -p /usr/local/conda
+    /usr/local/conda/bin/conda install numpy pandas scikit-learn
     # install topaz
-    conda install -c soumith pytorch=0.2.0 torchvision cuda80
+    /usr/local/conda/bin/conda install -c soumith pytorch=0.2.0 torchvision cuda80
     # in-container bind points for shared filesystems
     mkdir -p /gpfs
