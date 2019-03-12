@@ -26,7 +26,7 @@ Include: yum wget
     yum -y install https://centos7.iuscommunity.org/ius-release.rpm
     yum -y install http://developer.download.nvidia.com/compute/cuda/repos/rhel7/x86_64/cuda-repo-rhel7-8.0.61-1.x86_64.rpm
     yum clean all && yum makecache
-    yum -y install wget python35u python35u-pip libgomp cuda-runtime-8-0
+    yum -y install wget python35u python35u-pip libgomp cuda-runtime-8-0 bzip2
     ln -s /usr/local/cuda-8.0 /usr/local/cuda
     # install conda
     wget https://repo.continuum.io/miniconda/Miniconda3-3.7.0-Linux-x86_64.sh -O ~/miniconda.sh
