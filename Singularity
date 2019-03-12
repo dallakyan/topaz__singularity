@@ -33,6 +33,6 @@ Include: yum wget
     bash ~/miniconda.sh -b -p /usr/local/conda
     /usr/local/conda/bin/conda install -y numpy pandas scikit-learn
     # install topaz
-    /usr/local/conda/bin/conda install -y topaz cuda80 -c tbepler -c soumith
+    /usr/local/conda/bin/conda install -C -y topaz cuda80 -c tbepler -c soumith
     # in-container bind points for shared filesystems
     mkdir -p /gpfs
